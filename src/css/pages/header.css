@@ -1,1 +1,25 @@
-/*# sourceMappingURL=header.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "roboto";
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 0%;
+}
+.header .logo {
+  width: 11vw;
+}
+.header ul {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-around;
+  width: 87vw;
+}
+.header ul a {
+  color: white;
+  font-family: "roboto";
+}/*# sourceMappingURL=header.css.map */

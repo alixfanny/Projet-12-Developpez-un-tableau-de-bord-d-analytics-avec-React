@@ -1,1 +1,1 @@
-// graphique géometrique
+// graphique en ligne

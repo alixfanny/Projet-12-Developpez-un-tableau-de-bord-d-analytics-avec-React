@@ -1,0 +1,65 @@
+/* Reset CSS */
+
+/* Supprime les marges intérieures et extérieures */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd, img, figure, fieldset, form, textarea, input, button, select, option {
+    margin: 0;
+    padding: 0;
+}
+
+/* Supprime les bordures pour les images incorporées dans des liens */
+a img, img[usemap] {
+    border: none;
+}
+
+/* Supprime l'espacement entre les cellules dans les tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Supprime les list-styles par défaut pour ul et li */
+ul {
+    list-style: none;
+}
+
+/* Supprime les soulignements pour les liens */
+a {
+    text-decoration: none;
+}
+
+/* Supprime la bordure des champs de formulaire lorsqu'ils sont actifs */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+/* Réinitialise les espaces blancs */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset pour les éléments plus anciens */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Fixe le vertical-align sur img */
+img {
+    vertical-align: middle;
+}
+
+/* Fixe le style des boutons dans certains navigateurs */
+button {
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+/* Fixe le curseur pour les éléments "button" */
+[role="button"], button {
+    cursor: pointer;
+}

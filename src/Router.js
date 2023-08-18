@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import ProfilPage from '../src/pages/profil';
-import Header from './pages/Header';
-import SideBar from '../src/pages/SideBar';
+import ProfilPage from './pages/Profil';
+import Header from './pages/header';
+import SideBar from "./pages/SideBar";
 
-function appRouter() {
+function AppRouter() {
     return(
         <Router>
             <Header/>
-            <SideBar/>
             <Routes>
+                <Route path="/" element={<SideBar/>} />
                 <Route path="/" element={<ProfilPage/>} />
             </Routes>
         </Router>
     )
 }
 
-export default appRouter
+export default AppRouter

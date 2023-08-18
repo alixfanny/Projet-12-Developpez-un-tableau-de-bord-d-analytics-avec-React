@@ -1,0 +1,25 @@
+@import '../variables';
+
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 0%;
+
+    .logo{
+        width: 11vw;
+    }
+
+    ul{
+        display: flex;
+        font-size: 24px;
+        justify-content: space-around;
+        width: 87vw;
+
+        a{
+            color: white;
+            font-family: "roboto";
+        }
+    }
+}

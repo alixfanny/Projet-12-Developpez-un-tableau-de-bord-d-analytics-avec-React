@@ -1,1 +1,34 @@
-/*# sourceMappingURL=sideBar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "roboto";
+}
+
+.sideBar {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 17vw;
+  height: 83vh;
+}
+.sideBar ul {
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sideBar ul li {
+  background-color: white;
+  border-radius: 5px;
+  padding: 13%;
+}
+.sideBar ul li img {
+  width: 100%;
+}
+.sideBar .texte-vertical {
+  transform: rotate(90deg);
+  transform-origin: center;
+  font-size: 10px;
+}/*# sourceMappingURL=sideBar.css.map */
