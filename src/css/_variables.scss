@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+// Défini les variables
+$breakpoints: (
+    small: 576px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px
+);
+
+// mixin media queries
+@mixin for-size($breakpoint){
+    @if map-has-key($breakpoints, $breakpoint){
+    @media (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+    }@else{
+        @warn "Unknown breakpoint: #{$breakpoint}."
+    }
+};
+
+@mixin display($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
 body{
     font-family: "roboto";
 }

@@ -2,28 +2,22 @@
 
 .sideBar{
     background-color: black;
-    display: flex;
+    @include display(space-around, center);
     flex-direction: column;
-    justify-content: space-around;
     width: 17vw;
     height: 83vh;
 
     ul{
-        margin-left: 30%;
-        margin-right: 30%;
         height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         li{
             background-color: white;
             border-radius: 5px;
-            padding: 13%;
-
-            img{
-                width: 100%;
-            }
+            padding: 9px;
+            @include display(center, center);
         }
     }
 
@@ -31,5 +25,6 @@
         transform: rotate(90deg);
         transform-origin: center;
         font-size: 10px;
+        color: white;
     }
 }
