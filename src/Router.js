@@ -8,10 +8,12 @@ function AppRouter() {
     return(
         <Router>
             <Header/>
-            <Routes>
-                <Route path="/" element={<SideBar/>} />
-                <Route path="/" element={<ProfilPage/>} />
-            </Routes>
+            <div className="content-profil-page">
+                <SideBar />
+                <Routes>
+                    <Route path="/" element={<ProfilPage/>} />
+                </Routes>
+            </div>
         </Router>
     )
 }

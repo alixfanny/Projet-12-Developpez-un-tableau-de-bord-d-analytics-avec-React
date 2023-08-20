@@ -3,6 +3,10 @@ body {
   font-family: "roboto";
 }
 
+.content-profil-page {
+  display: flex;
+}
+
 .header {
   background-color: black;
   display: flex;

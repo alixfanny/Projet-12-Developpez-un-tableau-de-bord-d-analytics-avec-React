@@ -1,1 +1,21 @@
-/*# sourceMappingURL=profil.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "roboto";
+}
+
+.content-profil-page {
+  display: flex;
+}
+
+.profil-page {
+  margin-left: 4%;
+  margin-top: 4%;
+}
+.profil-page .title {
+  font-size: 48px;
+  margin-bottom: 4%;
+}
+.profil-page .subtitle {
+  font-size: 18px;
+  margin-bottom: 4%;
+}/*# sourceMappingURL=profil.css.map */

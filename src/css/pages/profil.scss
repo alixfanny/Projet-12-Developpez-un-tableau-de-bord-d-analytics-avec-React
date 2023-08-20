@@ -1,0 +1,16 @@
+@import '../variables';
+
+.profil-page{
+    margin-left: $margin;
+    margin-top: $margin;
+
+    .title{
+        font-size: 48px;
+        margin-bottom: $margin;
+    }
+
+    .subtitle{
+        font-size: 18px;
+        margin-bottom: $margin;
+    }
+}

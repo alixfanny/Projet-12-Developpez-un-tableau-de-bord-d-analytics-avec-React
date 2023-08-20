@@ -1,0 +1,39 @@
+@import '../variables';
+
+.legend{
+
+    display: flex;
+    align-items: center;
+
+    span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius:50% ;
+    margin-right: 2%;
+    }
+
+    .kg{
+       background-color: #282D30; 
+    }
+
+    .kcal{
+        background-color: #E60000;
+        margin-left: 4%;
+    }
+
+    p{
+        color: #74798C;
+        font-size: 14px;
+    }
+}
+
+.content-barchart{
+    background: #FBFBFB;
+    width: 75vw;
+    
+    .barchart-title{
+        font-size: 15px;
+        
+    }
+}

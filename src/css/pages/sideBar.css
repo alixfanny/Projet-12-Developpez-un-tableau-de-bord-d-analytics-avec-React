@@ -3,14 +3,18 @@ body {
   font-family: "roboto";
 }
 
+.content-profil-page {
+  display: flex;
+}
+
 .sideBar {
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 17vw;
-  height: 83vh;
+  width: 15vw;
+  height: auto;
 }
 .sideBar ul {
   height: 50vh;

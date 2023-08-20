@@ -4,8 +4,8 @@
     background-color: black;
     @include display(space-around, center);
     flex-direction: column;
-    width: 17vw;
-    height: 83vh;
+    width: 15vw;
+    height: auto;
 
     ul{
         height: 50vh;
