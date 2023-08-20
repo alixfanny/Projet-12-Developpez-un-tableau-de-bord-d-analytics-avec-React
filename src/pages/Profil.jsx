@@ -1,14 +1,20 @@
 import BarChart from "../components/BarChart";
 import React, { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
 import axios from 'axios';
 import '../css/pages/profil.css'
+import LineChartComponent from "../components/LineChart";
+import RadarChartComponent from "../components/RadarChart";
+import RadialBarChartComponent from "../components/RadialBarChart";
 
 function ProfilPage() {
     const [firstName, setFirstName] = useState('');
+    const { userId } = useParams()
+
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/user/18`);
+                const response = await axios.get(`http://localhost:3000/user/${userId}`);
                 setFirstName(response.data.data.userInfos.firstName);
             } catch (error) {
                 console.error('Erreur lors de la récupération des données :', error);
@@ -25,11 +31,11 @@ function ProfilPage() {
             </div>
             <div className="content-page">
                 <div className="content-charts">
-                    <BarChart />
+                    <BarChart userId={userId} />
                     <div className="content-other-chart">
-                        <div className="content-linechart"></div>
-                        <div className="content-radarchart"></div>
-                        <div className="content-radialbarchart"></div>
+                        <LineChartComponent userId={userId}/>
+                        <RadarChartComponent userId={userId}/>
+                        <RadialBarChartComponent userId={userId}/>
                     </div>
                 </div>
                 <div className="content-macronutrient">

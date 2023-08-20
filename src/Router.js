@@ -11,7 +11,7 @@ function AppRouter() {
             <div className="content-profil-page">
                 <SideBar />
                 <Routes>
-                    <Route path="/" element={<ProfilPage/>} />
+                    <Route path="/:userId" element={<ProfilPage/>} />
                 </Routes>
             </div>
         </Router>

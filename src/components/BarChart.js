@@ -17,13 +17,13 @@ function CustomLegend() {
     );
 }
 
-function BarChartComponent() {
+function BarChartComponent({userId}) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get('http://localhost:3000/user/12/activity');
+                const response = await axios.get(`http://localhost:3000/user/${userId}/activity`);
                 setData(response.data.data.sessions);
             } catch (error) {
                 console.error("Erreur lors de la récupération des données:", error);
@@ -31,7 +31,7 @@ function BarChartComponent() {
         }
 
         fetchData();
-    }, []);
+    }, [userId]);
 
     return (
         <div className="content-barchart">
