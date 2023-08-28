@@ -30,10 +30,50 @@
 
 .content-barchart{
     background: #FBFBFB;
-    width: 75vw;
+    width: 55vw;
+    margin-bottom: 4%;
     
     .barchart-title{
         font-size: 15px;
+        padding: 3%;
         
     }
+
+    .recharts-responsive-container{
+        width: 128% !important;
+    }
+
+    .recharts-legend-wrapper{
+        right: 260px !important;
+        top: -45px !important;
+    
+        
+        .legend{
+            width: 250px;
+        }
+    }
+
+    .recharts-cartesian-axis-tick-line{
+        stroke: none;
+    }
+
+    .recharts-cartesian-grid-vertical{
+        line{
+            stroke: none;
+        }
+    }
 }
+
+.tooltip{
+    background-color: #E60000;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+
+    .legend-tooltip{
+        margin-bottom: 35%;
+    }
+}
+
+

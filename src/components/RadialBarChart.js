@@ -1,21 +1,18 @@
 // diagramme en cercle
 
 import React, { useState, useEffect } from 'react';
-import { RadialBarChart, RadialBar, Legend, } from 'recharts';
+import { RadialBarChart, RadialBar, Text } from 'recharts';
 import axios from 'axios';
+import "../css/components/radialBarChart.css"
+import { getUserScore } from '../services/UserService';
 
 function RadialBarChartComponent({userId}) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            try {
-                const response = await axios.get(`http://localhost:3000/user/${userId}`);
-                const scoreData = [{ name: 'Score', value: response.data.data.score * 100 }];
-                setData(scoreData);
-            } catch (error) {
-                console.error("Erreur lors de la récupération des données:", error);
-            }
+            const score = await getUserScore(userId);
+           setData([{value : score}]) 
         }
 
         fetchData();
@@ -24,15 +21,18 @@ function RadialBarChartComponent({userId}) {
     return (
         <div className="content-radialbarchart">
             <h3>Score</h3>
-            <RadialBarChart width={500} height={500} cx="50%" cy="50%" innerRadius="10%" outerRadius="80%" barSize={10} data={data}>
+            <RadialBarChart width={250} height={250} cx="50%" cy="50%" innerRadius="60%" outerRadius="80%" barSize={10} data={data}>
                 <RadialBar
                 minAngle={15}
                 label={{ position: 'insideStart', fill: '#fff' }}
-                background
-                clockWise
-                dataKey="value"
+                background={{ fill: '#fbfbfb' }}
+                clockWise={true}
+                dataKey={(entry) => entry.value}
+                fill='#E60000'
                 />
-                <Legend iconSize={10} layout="vertical" verticalAlign="middle"  />
+                <Text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fill="#000000">
+                    {`${data[0]?.value || 0}% de votre objectif`}
+                </Text>
             </RadialBarChart>
         </div>
         );

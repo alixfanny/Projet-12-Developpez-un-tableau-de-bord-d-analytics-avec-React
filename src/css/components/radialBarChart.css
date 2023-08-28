@@ -1,1 +1,12 @@
-/*# sourceMappingURL=radialBarChart.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "roboto";
+}
+
+.content-profil-page {
+  display: flex;
+}
+
+.content-radialbarchart {
+  background-color: #FBFBFB;
+}/*# sourceMappingURL=radialBarChart.css.map */

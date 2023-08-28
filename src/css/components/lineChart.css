@@ -1,1 +1,22 @@
-/*# sourceMappingURL=lineChart.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: "roboto";
+}
+
+.content-profil-page {
+  display: flex;
+}
+
+.content-linechart {
+  background-color: #E60000;
+  border-radius: 5%;
+}
+.content-linechart h3 {
+  color: rgba(255, 255, 255, 0.504);
+}
+.content-linechart .recharts-cartesian-axis-line {
+  stroke: none;
+}
+.content-linechart .recharts-cartesian-axis-tick-line {
+  stroke: none;
+}/*# sourceMappingURL=lineChart.css.map */

@@ -1,9 +1,9 @@
 // graphique en barre
 
 import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import axios from 'axios';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import '../css/components/barChart.css';
+import { getUserActivity } from '../services/UserService';
 
 function CustomLegend() {
     return (
@@ -17,17 +17,31 @@ function CustomLegend() {
     );
 }
 
+function CustomTooltip({ active, payload }) {
+    if (active && payload && payload.length) {
+        return (
+            <div className='tooltip'>
+                <p className='legend-tooltip'>{`${payload[0].value}kg`}</p>
+                <p>{`${payload[1].value}kCal`}</p>
+            </div>
+        );
+    }
+
+    return null;
+}
+
+function extractDay(dateString) {
+    const date = new Date(dateString);
+    return date.getDate();  // retourne le jour du mois
+}
+
 function BarChartComponent({userId}) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            try {
-                const response = await axios.get(`http://localhost:3000/user/${userId}/activity`);
-                setData(response.data.data.sessions);
-            } catch (error) {
-                console.error("Erreur lors de la récupération des données:", error);
-            }
+            const activity = await getUserActivity(userId);
+            setData(activity);
         }
 
         fetchData();
@@ -35,21 +49,23 @@ function BarChartComponent({userId}) {
 
     return (
         <div className="content-barchart">
-            <h2 className='barchart-title'>Activité quotidienne</h2>
-            <BarChart
-                width={500}
-                height={500}
-                data={data}
-                margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis />
-                <YAxis dataKey="kilogram" />
-                <Tooltip />
-                <Legend content={<CustomLegend/>} />
-                <Bar dataKey="kilogram" fill="#282D30" />
-                <Bar dataKey="calories" fill="#E60000" />
-            </BarChart>
+            <h3 className='barchart-title'>Activité quotidienne</h3>
+            <ResponsiveContainer height={250}>
+                <BarChart
+                    width={1100}
+                    height={250}
+                    data={data}
+                    margin={{ top: 50, right: 0, left: 25, bottom: 0 }}
+                >
+                    <CartesianGrid strokeDasharray="2 2" />
+                    <XAxis dataKey="day" tickFormatter={extractDay} />
+                    <YAxis dataKey="" orientation="right" />
+                    <Tooltip content={<CustomTooltip />}/>
+                    <Legend content={<CustomLegend/>} className='legend' layout="vertical" verticalAlign="top" align="right"/>
+                    <Bar dataKey="kilogram" fill="#282D30" radius={[10, 10, 0, 0]} maxBarSize={10}/>
+                    <Bar dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} maxBarSize={10}/>
+                </BarChart>
+            </ResponsiveContainer>    
         </div>
     );
 }

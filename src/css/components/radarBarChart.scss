@@ -1,0 +1,24 @@
+@import '../variables';
+
+
+.content-radarchart{
+    background-color: #282D30;
+    border-radius: 5%;
+}
+
+.recharts-polar-radius-axis-tick-value{
+    fill: none;
+}
+
+.radiusAxis{
+    stroke: none;
+}
+
+.recharts-polar-grid-angle line{
+    stroke: none;
+}
+
+.recharts-polar-grid-concentric-polygon, .recharts-polar-angle-axis-tick-value{
+    stroke: white;
+    font-size: 12px;
+}

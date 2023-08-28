@@ -32,8 +32,37 @@ body {
 
 .content-barchart {
   background: #FBFBFB;
-  width: 75vw;
+  width: 55vw;
+  margin-bottom: 4%;
 }
 .content-barchart .barchart-title {
   font-size: 15px;
+  padding: 3%;
+}
+.content-barchart .recharts-responsive-container {
+  width: 128% !important;
+}
+.content-barchart .recharts-legend-wrapper {
+  right: 260px !important;
+  top: -45px !important;
+}
+.content-barchart .recharts-legend-wrapper .legend {
+  width: 250px;
+}
+.content-barchart .recharts-cartesian-axis-tick-line {
+  stroke: none;
+}
+.content-barchart .recharts-cartesian-grid-vertical line {
+  stroke: none;
+}
+
+.tooltip {
+  background-color: #E60000;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+.tooltip .legend-tooltip {
+  margin-bottom: 35%;
 }/*# sourceMappingURL=barChart.css.map */

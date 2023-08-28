@@ -1,12 +1,16 @@
 @import '../variables';
 
+.content-page{
+    display: flex;
+}
+
 .profil-page{
     margin-left: $margin;
     margin-top: $margin;
 
     .title{
         font-size: 48px;
-        margin-bottom: $margin;
+        margin-bottom: 2%;
     }
 
     .subtitle{
@@ -16,5 +20,7 @@
 
     .content-other-chart{
         display: flex;
+        justify-content: space-between;
     }
 }
+
