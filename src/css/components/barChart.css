@@ -34,6 +34,12 @@ body {
   background: #FBFBFB;
   width: 55vw;
   margin-bottom: 4%;
+  border-radius: 5%;
+}
+@media (max-width: 1200px) {
+  .content-barchart {
+    width: 77vw;
+  }
 }
 .content-barchart .barchart-title {
   font-size: 15px;

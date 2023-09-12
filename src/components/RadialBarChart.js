@@ -1,41 +1,40 @@
 // diagramme en cercle
 
 import React, { useState, useEffect } from 'react';
-import { RadialBarChart, RadialBar, Text } from 'recharts';
-import axios from 'axios';
-import "../css/components/radialBarChart.css"
-import { getUserScore } from '../services/UserService';
+import "../css/components/radialBarChart.css";
+import { getUserData } from '../services/UserService';
+import { RadialBarChart, RadialBar } from "recharts";
 
-function RadialBarChartComponent({userId}) {
-    const [data, setData] = useState([]);
+export default function RadialBarChartComponent({ userId }) {
+  const [score, setScore] = useState(0);
 
-    useEffect(() => {
-        async function fetchData() {
-            const score = await getUserScore(userId);
-           setData([{value : score}]) 
-        }
+  useEffect(() => {
+    async function fetchData() {
+      const userData = await getUserData(userId);
+      setScore(userData.score * 100);
+    }
 
-        fetchData();
-    }, [userId]);
+    fetchData();
+  }, [userId]);
 
-    return (
-        <div className="content-radialbarchart">
-            <h3>Score</h3>
-            <RadialBarChart width={250} height={250} cx="50%" cy="50%" innerRadius="60%" outerRadius="80%" barSize={10} data={data}>
-                <RadialBar
-                minAngle={15}
-                label={{ position: 'insideStart', fill: '#fff' }}
-                background={{ fill: '#fbfbfb' }}
-                clockWise={true}
-                dataKey={(entry) => entry.value}
-                fill='#E60000'
-                />
-                <Text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fill="#000000">
-                    {`${data[0]?.value || 0}% de votre objectif`}
-                </Text>
-            </RadialBarChart>
-        </div>
-        );
+
+  return (
+    <div className="container">
+      <div className="content-radialbarchart">
+        <RadialBarChart width={250} height={300} cx={120} cy={141} innerRadius={80} barSize={10} data={[{ value: score }, { value: 100, fill:"#fbfbfb" }]}>
+          <RadialBar
+            fill="#ff0000"
+            clockWise={true}
+            dataKey="value"
+          />
+        </RadialBarChart>
+      </div>
+      <div className='center'>
+        <p className='pourcentage'>
+          {`${score}%`}
+        </p>
+        <p className='text'>de votre objectif</p>
+      </div>
+    </div>
+  );
 }
-
-export default RadialBarChartComponent

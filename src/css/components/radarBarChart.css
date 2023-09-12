@@ -7,9 +7,20 @@ body {
   display: flex;
 }
 
+.recharts-wrapper {
+  margin-top: 4%;
+}
+
 .content-radarchart {
   background-color: #282D30;
   border-radius: 5%;
+  padding: 1%;
+  height: 300px;
+}
+@media (max-width: 1200px) {
+  .content-radarchart {
+    width: 220px;
+  }
 }
 
 .recharts-polar-radius-axis-tick-value {

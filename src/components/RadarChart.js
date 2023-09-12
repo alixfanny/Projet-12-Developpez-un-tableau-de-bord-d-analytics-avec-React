@@ -17,11 +17,11 @@ function RadarChartComponent({userId}) {
 
     return (
         <div className="content-radarchart">
-          <RadarChart width={250} height={250} cx="50%" cy="50%" outerRadius="80%" data={data}>
+          <RadarChart width={250} height={250} cx="50%" cy="50%" data={data}>
             <PolarGrid />
             <PolarAngleAxis dataKey="kind" />
             <PolarRadiusAxis />
-            <Radar name="Mike" dataKey="value" fill="#e60000" fillOpacity={0.6} />
+            <Radar  dataKey="value" fill="#e60000" fillOpacity={0.6} />
           </RadarChart>
         </div>
       );

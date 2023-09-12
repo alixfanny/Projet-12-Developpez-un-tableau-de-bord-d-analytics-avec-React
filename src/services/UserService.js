@@ -38,20 +38,33 @@ const getUserPerformance = async function(userId) {
     }
 }
 
-const getUserScore = async function(userId) {
+const getUserData = async function(userId) {
     try {
         const response = await axios.get(`${baseUrl}/${userId}`);
-        const scoreData = response.data.data.score * 100;
-        return scoreData;
+        const firstName = response.data.data.userInfos.firstName;
+        const score = response.data.data.score ?? response.data.data.todayScore;
+        const calories = response.data.data.keyData.calorieCount;
+        const proteines = response.data.data.keyData.proteinCount;
+        const glucides = response.data.data.keyData.carbohydrateCount;
+        const lipides = response.data.data.keyData.lipidCount;
+        return {
+            firstName,
+            score, 
+            calories,
+            proteines,
+            glucides,
+            lipides
+        };
     } catch (error) {
         showError(error);
         
     }
 }
 
+
 export {
     getUserActivity,
     getUserAverageSessions,
     getUserPerformance,
-    getUserScore
+    getUserData
 }

@@ -10,13 +10,25 @@ body {
 .content-linechart {
   background-color: #E60000;
   border-radius: 5%;
+  padding: 1%;
+  height: 300px;
+}
+@media (max-width: 1200px) {
+  .content-linechart {
+    width: 220px;
+  }
 }
 .content-linechart h3 {
   color: rgba(255, 255, 255, 0.504);
+  width: 60%;
 }
 .content-linechart .recharts-cartesian-axis-line {
   stroke: none;
 }
 .content-linechart .recharts-cartesian-axis-tick-line {
   stroke: none;
+}
+.content-linechart circle {
+  fill: transparent;
+  stroke-width: 0;
 }/*# sourceMappingURL=lineChart.css.map */

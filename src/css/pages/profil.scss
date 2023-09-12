@@ -7,6 +7,7 @@
 .profil-page{
     margin-left: $margin;
     margin-top: $margin;
+    margin-bottom: $margin;
 
     .title{
         font-size: 48px;
@@ -21,6 +22,26 @@
     .content-other-chart{
         display: flex;
         justify-content: space-between;
+    }
+
+    .content-macronutrient{
+        margin-left: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 710px;
+
+        @include for-size(xlarge){
+            flex-direction: row;
+            margin-left: 0%;
+            height: 65px;
+        }
+    }
+}
+
+@include for-size(xlarge){
+    .content-page{
+        flex-direction: column;
     }
 }
 

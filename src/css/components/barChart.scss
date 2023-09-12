@@ -32,6 +32,11 @@
     background: #FBFBFB;
     width: 55vw;
     margin-bottom: 4%;
+    border-radius: 5%;
+
+    @include for-size(xlarge){
+        width: 77vw;
+    }
     
     .barchart-title{
         font-size: 15px;

@@ -3,9 +3,17 @@
 .content-linechart{
     background-color: #E60000;
     border-radius: 5%;
+    padding: 1%;
+    height: 300px;
+
+    @include for-size(xlarge){
+        width: 220px;
+    }
 
     h3{
         color: rgba(255, 255, 255, 0.504);
+        width: 60%;
+
     }
 
     .recharts-cartesian-axis-line{
@@ -14,5 +22,10 @@
 
     .recharts-cartesian-axis-tick-line{
         stroke: none;
+    }
+
+    circle{
+        fill: transparent;
+        stroke-width: 0;
     }
 }
