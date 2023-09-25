@@ -1,5 +1,8 @@
 @import '../variables';
 
+.content-profil-page{
+    height: 150vh;
+}
 .content-page{
     display: flex;
 }
@@ -25,11 +28,11 @@
     }
 
     .content-macronutrient{
-        margin-left: 4%;
+        margin-left: 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 710px;
+        height: 730px;
 
         @include for-size(xlarge){
             flex-direction: row;

@@ -18,20 +18,20 @@
     }
 
     .kcal{
-        background-color: #E60000;
+        background-color: $primaryColor;
         margin-left: $margin;
     }
 
     p{
-        color: #74798C;
+        color: $secondaryColor;
         font-size: 14px;
     }
 }
 
 .content-barchart{
-    background: #FBFBFB;
-    width: 55vw;
-    margin-bottom: 4%;
+    background: $backgroundColor;
+    width: 58vw;
+    margin-bottom: 10%;
     border-radius: 5%;
 
     @include for-size(xlarge){
@@ -59,18 +59,18 @@
     }
 
     .recharts-cartesian-axis-tick-line{
-        stroke: none;
+        stroke: $none;
     }
 
     .recharts-cartesian-grid-vertical{
         line{
-            stroke: none;
+            stroke: $none;
         }
     }
 }
 
 .tooltip{
-    background-color: #E60000;
+    background-color: $primaryColor;
     padding: 10px;
     color: white;
     text-align: center;

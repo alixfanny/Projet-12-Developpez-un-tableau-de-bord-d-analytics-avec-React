@@ -7,6 +7,10 @@ body {
   display: flex;
 }
 
+.content-profil-page {
+  height: 150vh;
+}
+
 .content-page {
   display: flex;
 }
@@ -29,11 +33,11 @@ body {
   justify-content: space-between;
 }
 .profil-page .content-macronutrient {
-  margin-left: 4%;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 710px;
+  height: 730px;
 }
 @media (max-width: 1200px) {
   .profil-page .content-macronutrient {

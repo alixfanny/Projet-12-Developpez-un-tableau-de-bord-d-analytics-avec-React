@@ -32,8 +32,8 @@ body {
 
 .content-barchart {
   background: #FBFBFB;
-  width: 55vw;
-  margin-bottom: 4%;
+  width: 58vw;
+  margin-bottom: 10%;
   border-radius: 5%;
 }
 @media (max-width: 1200px) {

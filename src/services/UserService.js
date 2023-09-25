@@ -32,6 +32,7 @@ const getUserPerformance = async function(userId) {
             kind: response.data.data.kind[item.kind],
             value: item.value
         }));
+        console.log(mappedData)
         return mappedData;
     } catch (error) {
         showError(error);

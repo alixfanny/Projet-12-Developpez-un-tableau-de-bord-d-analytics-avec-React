@@ -8,6 +8,10 @@ $breakpoints: (
     xlarge: 1200px
 );
 $margin: 4%;
+$none: none;
+$primaryColor:#E60000;
+$secondaryColor:#74798C;
+$backgroundColor:#FBFBFB;
 
 // mixin media queries
 @mixin for-size($breakpoint){

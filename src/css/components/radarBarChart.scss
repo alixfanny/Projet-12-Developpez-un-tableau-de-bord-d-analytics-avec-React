@@ -1,10 +1,5 @@
 @import '../variables';
 
-
-.recharts-wrapper{
-    margin-top: 4%;
-}
-
 .content-radarchart{
     background-color: #282D30;
     border-radius: 5%;
@@ -17,18 +12,18 @@
 }
 
 .recharts-polar-radius-axis-tick-value{
-    fill: none;
+    fill: $none;
 }
 
 .radiusAxis{
-    stroke: none;
+    stroke: $none;
 }
 
 .recharts-polar-grid-angle line{
-    stroke: none;
+    stroke: $none;
 }
 
 .recharts-polar-grid-concentric-polygon, .recharts-polar-angle-axis-tick-value{
     stroke: white;
-    font-size: 12px;
+    font-size: 9px;
 }

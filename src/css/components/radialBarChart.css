@@ -17,6 +17,12 @@ body {
     width: 220px;
   }
 }
+.content-radialbarchart h3 {
+  position: relative;
+  top: 20px;
+  left: 6%;
+  font-size: 20px;
+}
 .content-radialbarchart .recharts-pie-label-line {
   stroke: none;
 }
@@ -35,8 +41,8 @@ body {
   border-radius: 50%;
   width: 59%;
   position: relative;
-  bottom: 61%;
-  right: -20%;
+  top: -58%;
+  left: 18%;
 }
 .center .pourcentage {
   font-size: 26px;

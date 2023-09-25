@@ -1,7 +1,7 @@
 @import '../variables';
 
 .card-container{
-    background-color: #FBFBFB;
+    background-color: $backgroundColor;
     display: flex;
     padding: 15%;
     width: 15vw;
@@ -17,9 +17,7 @@
         border-radius: 20%;
 
         @include for-size(xlarge){
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display(center, center);
         }
     }
 
@@ -27,16 +25,14 @@
         margin-left: 6%;
 
         @include for-size(xlarge){
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include display(center, center);
         }
 
         .name{
-            color: #74798C;
+            color: $secondaryColor;
 
             @include for-size(xlarge){
-                margin-left: 4%;
+                margin-left: $margin;
             }
         }
 
