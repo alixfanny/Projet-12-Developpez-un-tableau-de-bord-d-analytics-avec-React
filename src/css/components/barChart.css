@@ -48,12 +48,15 @@ body {
 .content-barchart .recharts-responsive-container {
   width: 128% !important;
 }
+.content-barchart .recharts-responsive-container .recharts-surface {
+  width: 1450px !important;
+}
 .content-barchart .recharts-legend-wrapper {
   right: 260px !important;
   top: -45px !important;
 }
 .content-barchart .recharts-legend-wrapper .legend {
-  width: 250px;
+  width: 330px;
 }
 .content-barchart .recharts-cartesian-axis-tick-line {
   stroke: none;

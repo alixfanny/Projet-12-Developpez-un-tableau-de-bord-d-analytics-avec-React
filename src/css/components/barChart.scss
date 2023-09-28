@@ -46,6 +46,10 @@
 
     .recharts-responsive-container{
         width: 128% !important;
+
+        .recharts-surface{
+            width: 1450px !important;
+        }
     }
 
     .recharts-legend-wrapper{
@@ -54,7 +58,7 @@
     
         
         .legend{
-            width: 250px;
+            width: 330px;
         }
     }
 

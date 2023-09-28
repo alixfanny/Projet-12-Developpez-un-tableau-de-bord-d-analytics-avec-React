@@ -25,6 +25,10 @@ body {
   top: 6%;
   left: 6%;
 }
+.content-linechart .tooltip {
+  background-color: white;
+  color: black;
+}
 .content-linechart .recharts-cartesian-axis-line {
   stroke: none;
 }
@@ -32,6 +36,5 @@ body {
   stroke: none;
 }
 .content-linechart circle {
-  fill: transparent;
   stroke-width: 0;
 }/*# sourceMappingURL=lineChart.css.map */

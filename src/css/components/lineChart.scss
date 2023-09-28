@@ -19,6 +19,11 @@
 
     }
 
+    .tooltip{
+        background-color: white;
+        color: black;
+    }
+
     .recharts-cartesian-axis-line{
         stroke: none;
     }
@@ -28,7 +33,6 @@
     }
 
     circle{
-        fill: transparent;
         stroke-width: 0;
     }
 }

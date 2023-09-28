@@ -19,7 +19,9 @@ const getUserActivity = async function(userId) {
 const getUserAverageSessions = async function (userId) {
     try {
         const response = await axios.get(`${baseUrl}/${userId}/average-sessions`);
+   
         return response.data.data.sessions;
+    
     } catch (error) {
         showError(error);
     }
@@ -32,7 +34,6 @@ const getUserPerformance = async function(userId) {
             kind: response.data.data.kind[item.kind],
             value: item.value
         }));
-        console.log(mappedData)
         return mappedData;
     } catch (error) {
         showError(error);
