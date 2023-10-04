@@ -38,7 +38,7 @@ body {
 }
 @media (max-width: 1200px) {
   .content-barchart {
-    width: 77vw;
+    width: 80vw;
   }
 }
 .content-barchart .barchart-title {
@@ -51,9 +51,19 @@ body {
 .content-barchart .recharts-responsive-container .recharts-surface {
   width: 1450px !important;
 }
+@media (max-width: 1200px) {
+  .content-barchart .recharts-responsive-container .recharts-surface {
+    width: 1093px !important;
+  }
+}
 .content-barchart .recharts-legend-wrapper {
   right: 260px !important;
   top: -45px !important;
+}
+@media (max-width: 1200px) {
+  .content-barchart .recharts-legend-wrapper {
+    right: 107px !important;
+  }
 }
 .content-barchart .recharts-legend-wrapper .legend {
   width: 330px;

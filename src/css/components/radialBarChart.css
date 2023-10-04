@@ -14,7 +14,13 @@ body {
 }
 @media (max-width: 1200px) {
   .content-radialbarchart {
-    width: 220px;
+    width: 303%;
+    margin-top: 10%;
+  }
+}
+@media (max-width: 1200px) {
+  .content-radialbarchart .recharts-surface {
+    width: 82vw;
   }
 }
 .content-radialbarchart h3 {
@@ -39,10 +45,17 @@ body {
   height: 39%;
   background-color: white;
   border-radius: 50%;
-  width: 59%;
+  width: 55%;
   position: relative;
   top: -58%;
   left: 18%;
+}
+@media (max-width: 1200px) {
+  .center {
+    left: 124%;
+    top: -55%;
+    height: 36%;
+  }
 }
 .center .pourcentage {
   font-size: 26px;

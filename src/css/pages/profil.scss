@@ -25,6 +25,10 @@
     .content-other-chart{
         display: flex;
         justify-content: space-between;
+
+        @include for-size (xlarge){
+            flex-wrap: wrap;
+        }
     }
 
     .content-macronutrient{

@@ -50,7 +50,7 @@ function BarChartComponent({userId}) {
     return (
         <div className="content-barchart">
             <h3 className='barchart-title'>Activité quotidienne</h3>
-            <ResponsiveContainer height={250}>
+            <ResponsiveContainer height={250} width={950}>
                 <BarChart
                     width={1100}
                     height={250}

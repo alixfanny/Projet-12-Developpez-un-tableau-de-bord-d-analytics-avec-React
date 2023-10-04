@@ -15,7 +15,12 @@ body {
 }
 @media (max-width: 1200px) {
   .content-radarchart {
-    width: 220px;
+    width: 45%;
+  }
+}
+@media (max-width: 1200px) {
+  .content-radarchart .recharts-surface {
+    width: 36vw;
   }
 }
 
@@ -34,4 +39,9 @@ body {
 .recharts-polar-grid-concentric-polygon, .recharts-polar-angle-axis-tick-value {
   stroke: white;
   font-size: 9px;
+}
+@media (max-width: 1200px) {
+  .recharts-polar-grid-concentric-polygon, .recharts-polar-angle-axis-tick-value {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=radarBarChart.css.map */

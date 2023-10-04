@@ -35,7 +35,7 @@
     border-radius: 5%;
 
     @include for-size(xlarge){
-        width: 77vw;
+        width: 80vw;
     }
     
     .barchart-title{
@@ -49,12 +49,20 @@
 
         .recharts-surface{
             width: 1450px !important;
+
+            @include for-size (xlarge) {
+                width: 1093px !important;
+            }
         }
     }
 
     .recharts-legend-wrapper{
         right: 260px !important;
         top: -45px !important;
+
+        @include for-size (xlarge) {
+            right: 107px !important;
+        }
     
         
         .legend{

@@ -32,6 +32,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1200px) {
+  .profil-page .content-other-chart {
+    flex-wrap: wrap;
+  }
+}
 .profil-page .content-macronutrient {
   margin-left: 30px;
   display: flex;

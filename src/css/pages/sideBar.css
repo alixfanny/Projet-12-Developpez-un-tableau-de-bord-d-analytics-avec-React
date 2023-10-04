@@ -14,7 +14,13 @@ body {
   align-items: center;
   flex-direction: column;
   width: 15vw;
-  height: auto;
+  height: 150vh;
+}
+@media (max-width: 1200px) {
+  .sideBar {
+    width: 13vw;
+    height: 180vh;
+  }
 }
 .sideBar ul {
   height: 50vh;

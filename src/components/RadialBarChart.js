@@ -26,7 +26,7 @@ export default function RadialBarChartComponent({ userId }) {
         <RadialBarChart width={270} height={300} cx={120} cy={141} innerRadius={80} barSize={10} data={[{ value: score }, { value: 100, fill:"#fbfbfb" }]}  startAngle={150} endAngle={-370}>
           <RadialBar
             fill="#ff0000"
-            clockWise={true}
+            clockWise={false}
             dataKey="value"
           />
         </RadialBarChart>

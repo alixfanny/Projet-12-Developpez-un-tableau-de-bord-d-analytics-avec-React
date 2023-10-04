@@ -15,7 +15,12 @@ body {
 }
 @media (max-width: 1200px) {
   .content-linechart {
-    width: 220px;
+    width: 45%;
+  }
+}
+@media (max-width: 1200px) {
+  .content-linechart .recharts-surface {
+    width: 34vw;
   }
 }
 .content-linechart h3 {

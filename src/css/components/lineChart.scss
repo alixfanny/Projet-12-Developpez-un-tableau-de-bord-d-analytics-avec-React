@@ -7,7 +7,13 @@
     height: 300px;
 
     @include for-size(xlarge){
-        width: 220px;
+        width: 45%;
+    }
+
+    @include for-size(xlarge){
+        .recharts-surface{
+            width: 34vw;
+        }
     }
 
     h3{
