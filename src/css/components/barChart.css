@@ -35,6 +35,7 @@ body {
   width: 58vw;
   margin-bottom: 10%;
   border-radius: 5%;
+  height: 37vh;
 }
 @media (max-width: 1200px) {
   .content-barchart {
@@ -57,12 +58,12 @@ body {
   }
 }
 .content-barchart .recharts-legend-wrapper {
-  right: 260px !important;
+  right: -183px !important;
   top: -45px !important;
 }
 @media (max-width: 1200px) {
   .content-barchart .recharts-legend-wrapper {
-    right: 107px !important;
+    right: 60px !important;
   }
 }
 .content-barchart .recharts-legend-wrapper .legend {

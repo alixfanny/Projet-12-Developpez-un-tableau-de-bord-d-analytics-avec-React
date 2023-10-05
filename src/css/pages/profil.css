@@ -42,7 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 730px;
+  height: 780px;
 }
 @media (max-width: 1200px) {
   .profil-page .content-macronutrient {

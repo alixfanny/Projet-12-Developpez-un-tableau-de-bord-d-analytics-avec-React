@@ -55,7 +55,7 @@ function BarChartComponent({userId}) {
                     width={1100}
                     height={250}
                     data={data}
-                    margin={{ top: 50, right: 0, left: 25, bottom: 0 }}
+                    margin={{ top: 50, right: -145, left: -35, bottom: 0 }}
                 >
                     <CartesianGrid strokeDasharray="2 2" />
                     <XAxis dataKey="day" tickFormatter={extractDay} />

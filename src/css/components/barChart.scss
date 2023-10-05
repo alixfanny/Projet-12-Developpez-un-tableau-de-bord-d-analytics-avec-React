@@ -33,6 +33,7 @@
     width: 58vw;
     margin-bottom: 10%;
     border-radius: 5%;
+    height: 37vh;
 
     @include for-size(xlarge){
         width: 80vw;
@@ -57,11 +58,11 @@
     }
 
     .recharts-legend-wrapper{
-        right: 260px !important;
+        right: -183px !important;
         top: -45px !important;
 
         @include for-size (xlarge) {
-            right: 107px !important;
+            right: 60px !important;
         }
     
         
