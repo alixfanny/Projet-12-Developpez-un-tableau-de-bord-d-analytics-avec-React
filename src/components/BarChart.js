@@ -42,28 +42,34 @@ function BarChartComponent({userId}) {
         async function fetchData() {
             const activity = await getUserActivity(userId);
             setData(activity);
+            console.log(activity)
         }
 
         fetchData();
     }, [userId]);
 
+    const isLargeScreen = window.innerWidth > 1024;
+    const marginClass = isLargeScreen ? 'large-screen' : 'small-screen';
+
     return (
         <div className="content-barchart">
             <h3 className='barchart-title'>Activité quotidienne</h3>
-            <ResponsiveContainer height={250} width={950}>
+            <ResponsiveContainer height={250} width={750}>
                 <BarChart
                     width={1100}
                     height={250}
                     data={data}
-                    margin={{ top: 50, right: -145, left: -35, bottom: 0 }}
+                    className={marginClass}
+                    margin={{ top: 50, right: -350, left: 45, bottom: 0 }}
                 >
                     <CartesianGrid strokeDasharray="2 2" />
                     <XAxis dataKey="day" tickFormatter={extractDay} />
-                    <YAxis dataKey="" orientation="right" />
+                    <YAxis dataKey="kilogram" orientation="right" yAxisId="kilogram" domain={['dataMin - 1', 'dataMax + 1']} allowDecimals={false} />
+                    <YAxis dataKey="calories" orientation="right" yAxisId="calories" hide />
                     <Tooltip content={<CustomTooltip />}/>
                     <Legend content={<CustomLegend/>} className='legend' layout="vertical" verticalAlign="top" align="right"/>
-                    <Bar dataKey="kilogram" fill="#282D30" radius={[10, 10, 0, 0]} maxBarSize={10}/>
-                    <Bar dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} maxBarSize={10}/>
+                    <Bar dataKey="kilogram" fill="#282D30" radius={[10, 10, 0, 0]} maxBarSize={10} yAxisId="kilogram"/>
+                    <Bar dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} maxBarSize={10} yAxisId="calories"/>
                 </BarChart>
             </ResponsiveContainer>    
         </div>

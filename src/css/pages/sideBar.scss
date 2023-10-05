@@ -4,12 +4,12 @@
     background-color: black;
     @include display(space-around, center);
     flex-direction: column;
-    width: 15vw;
+    width: 120px;
     height: 150vh;
 
     @include for-size(xlarge){
         width: 13vw;
-        height: 180vh;
+        height: 192vh;
     }
 
 

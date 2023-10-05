@@ -14,7 +14,7 @@ body {
   width: 15vw;
   border-radius: 5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .card-container {
     padding: 1%;
     width: 177px;
@@ -24,7 +24,7 @@ body {
   padding: 5%;
   border-radius: 20%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .card-container .card-container-img {
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 .card-container .card-container-information {
   margin-left: 6%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .card-container .card-container-information {
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ body {
 .card-container .card-container-information .name {
   color: #74798C;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .card-container .card-container-information .name {
     margin-left: 4%;
   }

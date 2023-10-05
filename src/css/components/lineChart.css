@@ -13,12 +13,12 @@ body {
   padding: 1%;
   height: 300px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .content-linechart {
     width: 45%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .content-linechart .recharts-surface {
     width: 34vw;
   }

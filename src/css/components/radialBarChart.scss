@@ -6,8 +6,8 @@
     border-radius: 5%;
 
     @include for-size(xlarge){
-        width: 303% ;
-        margin-top: 10%;
+        width: 79vw ;
+        margin-top: 5%;
     }
 
     @include for-size(xlarge){
@@ -21,6 +21,7 @@
         top: 20px;
         left: 6%;
         font-size: 20px;
+        width: 94%;
     }
     .recharts-pie-label-line{
         stroke: $none;
@@ -45,9 +46,10 @@
     left: 18%;
 
     @include for-size(xlarge){
-        left: 124%;
-        top: -55%;
-        height: 36%;
+        left: 42%;
+        top: -50%;
+        height: 28%;
+        width: 18%;
     }
 
     .pourcentage{

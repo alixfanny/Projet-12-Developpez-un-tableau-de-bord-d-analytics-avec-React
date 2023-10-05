@@ -13,12 +13,12 @@ body {
   padding: 1%;
   height: 300px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .content-radarchart {
     width: 45%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .content-radarchart .recharts-surface {
     width: 36vw;
   }
@@ -40,7 +40,7 @@ body {
   stroke: white;
   font-size: 9px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .recharts-polar-grid-concentric-polygon, .recharts-polar-angle-axis-tick-value {
     font-size: 13px;
   }

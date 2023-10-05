@@ -14,6 +14,9 @@ body {
 .content-page {
   display: flex;
 }
+.content-page .content-charts {
+  width: 64vw;
+}
 
 .profil-page {
   margin-left: 4%;
@@ -31,10 +34,12 @@ body {
 .profil-page .content-other-chart {
   display: flex;
   justify-content: space-between;
+  width: 63vw;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .profil-page .content-other-chart {
     flex-wrap: wrap;
+    width: 80vw;
   }
 }
 .profil-page .content-macronutrient {
@@ -42,17 +47,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 780px;
+  height: 730px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .profil-page .content-macronutrient {
     flex-direction: row;
     margin-left: 0%;
     height: 65px;
+    width: 80vw;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .content-page {
     flex-direction: column;
   }

@@ -5,36 +5,7 @@ import { LineChart, Line, XAxis, ResponsiveContainer, Tooltip, Rectangle} from '
 import '../css/components/lineChart.css'
 import { getUserAverageSessions } from '../services/UserService';
 import {PropTypes} from 'prop-types';
-
-function MappingDay(daymapping){
-  const daysmapping = [
-    "L",
-    "M",
-    "M",
-    "J",
-    "V",
-    "S",
-    "D",
-  ];
-
-  //eslint-disable-next-line default-case
-  switch(daymapping){
-    case 1:
-      return daysmapping[0];
-    case 2:
-      return daysmapping[1];
-    case 3:
-      return daysmapping[2];
-    case 4:
-      return daysmapping[3];
-    case 5:
-      return daysmapping[4];
-    case 6:
-      return daysmapping[5];
-    case 7:
-      return daysmapping[6];
-  }
-}
+import { MappingDay } from '../services/DataTransformer';
 
 function CustomTooltip({ active, payload }) {
   if (active && payload && payload.length) {

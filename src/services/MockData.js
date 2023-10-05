@@ -1,21 +1,20 @@
- export const userData = [
-    {
-        id: 12,
+ export const userData = {
+    12:{
         userInfos: {
             firstName: 'Karl',
             lastName: 'Dovineau',
             age: 31,
         },
-        todayScore: 0.12,
+         todayScore: 0.12,
         keyData: {
+        
             calorieCount: 1930,
             proteinCount: 155,
             carbohydrateCount: 290,
             lipidCount: 50
         }
     },
-    {
-        id: 18,
+    18:{
         userInfos: {
             firstName: 'Cecilia',
             lastName: 'Ratorez',
@@ -29,12 +28,10 @@
             lipidCount: 120
         }
     }
-]
+}
 
-export const userActivity = [
-    {
-        userId: 12,
-        sessions: [
+export const userActivity = {
+    12:[
             {
                 day: '2020-07-01',
                 kilogram: 80,
@@ -70,14 +67,12 @@ export const userActivity = [
                 kilogram: 76,
                 calories: 390
             }
-        ]
-    },
-    {
-        userId: 18,
-        sessions: [
+    ]
+    ,
+    18:[
             {
                 day: '2020-07-01',
-                kilogram: 70,
+                kilogram: 700,
                 calories: 240
             },
             {
@@ -110,15 +105,12 @@ export const userActivity = [
                 kilogram: 69,
                 calories: 390
             }
-        ]
-    }
-]
+    ]
+    
+}
 
-
-export const UserAverageSessions = [
-    {
-        userId: 12,
-        sessions: [
+export const userAverageSessions = {
+    12:[
             {
                 day: 1,
                 sessionLength: 30
@@ -148,10 +140,8 @@ export const UserAverageSessions = [
                 sessionLength: 60
             }
         ]
-    },
-    {
-        userId: 18,
-        sessions: [
+    ,
+    18:[
             {
                 day: 1,
                 sessionLength: 30
@@ -181,13 +171,10 @@ export const UserAverageSessions = [
                 sessionLength: 50
             }
         ]
-    }
-]
+}
 
-
-export const userPerformance = [
-    {
-        userId: 12,
+export const userPerformance = {
+    12:{
         kind: {
             1: 'cardio',
             2: 'energy',
@@ -223,8 +210,7 @@ export const userPerformance = [
             }
         ]
     },
-    {
-        userId: 18,
+    18:{
         kind: {
             1: 'cardio',
             2: 'energy',
@@ -260,4 +246,4 @@ export const userPerformance = [
             }
         ]
     }
-]
+}

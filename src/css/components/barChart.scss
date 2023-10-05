@@ -30,10 +30,10 @@
 
 .content-barchart{
     background: $backgroundColor;
-    width: 58vw;
-    margin-bottom: 10%;
+    width: 99%;
+    margin-bottom: 5%;
     border-radius: 5%;
-    height: 37vh;
+    height: 50vh;
 
     @include for-size(xlarge){
         width: 80vw;
@@ -46,23 +46,23 @@
     }
 
     .recharts-responsive-container{
-        width: 128% !important;
+        width: 100% !important;
 
         .recharts-surface{
-            width: 1450px !important;
+            width: 117%;
 
             @include for-size (xlarge) {
-                width: 1093px !important;
+                width: 100% !important;
             }
         }
     }
 
     .recharts-legend-wrapper{
-        right: -183px !important;
+        right: -24% !important;
         top: -45px !important;
 
         @include for-size (xlarge) {
-            right: 60px !important;
+            right: -78px !important;
         }
     
         
@@ -92,6 +92,15 @@
     .legend-tooltip{
         margin-bottom: 35%;
     }
+}
+
+.large-screen {
+    margin: 0px 0px 0 25px;
+}
+  
+  /* Styles pour les écrans plus petits */
+.small-screen {
+    margin: 50px -250px 0 45px;
 }
 
 

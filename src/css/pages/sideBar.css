@@ -13,13 +13,13 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  width: 15vw;
+  width: 120px;
   height: 150vh;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .sideBar {
     width: 13vw;
-    height: 180vh;
+    height: 192vh;
   }
 }
 .sideBar ul {

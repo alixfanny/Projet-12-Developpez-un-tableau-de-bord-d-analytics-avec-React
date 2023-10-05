@@ -2,15 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 import '../css/components/radarBarChart.css';
 import { getUserPerformance } from '../services/UserService';
-
-const kindMapping = {
-  cardio: 'cardio',
-  energy: 'énergie',
-  endurance: 'endurance',
-  strength: 'force',
-  speed: 'vitesse',
-  intensity: 'intensité',
-};
+import { kindMapping } from '../services/DataTransformer';
 
 function RadarChartComponent({ userId }) {
   const [data, setData] = useState([]);

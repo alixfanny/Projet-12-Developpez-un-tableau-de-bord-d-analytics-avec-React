@@ -5,6 +5,10 @@
 }
 .content-page{
     display: flex;
+
+    .content-charts{
+        width: 64vw;
+    }
 }
 
 .profil-page{
@@ -25,9 +29,11 @@
     .content-other-chart{
         display: flex;
         justify-content: space-between;
+        width: 63vw;
 
         @include for-size (xlarge){
             flex-wrap: wrap;
+            width: 80vw;
         }
     }
 
@@ -36,12 +42,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 780px;
+        height: 730px;
+        
 
         @include for-size(xlarge){
             flex-direction: row;
             margin-left: 0%;
             height: 65px;
+            width: 80vw;
         }
     }
 }
