@@ -8,7 +8,7 @@ const kindMapping = {
 };
 
 function MappingData(data){
-    const firstName = data.firstName;
+    const firstName = data.userInfos.firstName;
     const score = data.score ?? data.todayScore;
     const calories = data.keyData.calorieCount;
     const proteines = data.keyData.proteinCount;

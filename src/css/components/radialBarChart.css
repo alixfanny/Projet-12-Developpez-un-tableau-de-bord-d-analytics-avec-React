@@ -53,10 +53,27 @@ body {
 }
 @media (max-width: 1400px) {
   .center {
-    left: 42%;
-    top: -50%;
-    height: 28%;
-    width: 18%;
+    left: 45%;
+    top: -51%;
+    height: 32%;
+    width: 14%;
+  }
+}
+@media (max-width: 1328px) {
+  .center {
+    top: -52%;
+    width: 15%;
+  }
+}
+@media (max-width: 1160px) {
+  .center {
+    left: 43%;
+    height: 30%;
+  }
+}
+@media (max-width: 1084px) {
+  .center {
+    top: -51%;
   }
 }
 .center .pourcentage {
@@ -68,6 +85,11 @@ body {
   display: flex;
   text-align: center;
 }
+@media (max-width: 1328px) {
+  .center .pourcentage {
+    font-size: 24px;
+  }
+}
 .center .text {
   left: 29%;
   bottom: -20%;
@@ -76,4 +98,9 @@ body {
   position: relative;
   font-size: 16px;
   text-align: center;
+}
+@media (max-width: 1328px) {
+  .center .text {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=radialBarChart.css.map */

@@ -46,11 +46,23 @@
     left: 18%;
 
     @include for-size(xlarge){
-        left: 42%;
-        top: -50%;
-        height: 28%;
-        width: 18%;
+        left: 45%;
+        top: -51%;
+        height: 32%;
+        width: 14%;
     }
+    @include for-size(large){
+        top: -52%;
+        width: 15%;
+    }
+    @include for-size(medium){
+        left: 43%;
+        height: 30%;
+    }
+    @include for-size(small){
+        top: -51%;
+    }
+    
 
     .pourcentage{
         font-size: 26px;
@@ -60,6 +72,10 @@
         overflow: hidden;
         display: flex;
         text-align: center;
+
+        @include for-size(large){
+            font-size: 24px;
+        }
     }
 
     .text{
@@ -70,5 +86,9 @@
         position: relative;
         font-size: 16px;
         text-align: center;
+
+        @include for-size(large){
+            font-size: 14px;
+        }
     }
 }
